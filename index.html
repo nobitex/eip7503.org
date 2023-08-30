@@ -9,26 +9,34 @@
     <meta name="description" content="Zero-Knowledge Wormholes - Privacy extension for Ethereum">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&display=swap" rel="stylesheet">
     <style>
         * {
             text-align: center;
-            font-family: 'Caveat', cursive;
+            font-family: 'JetBrains Mono', monospace;
         }
         h1 {
             margin-top: 10vh;
-            font-size: 4em;
+            font-size: 3em;
         }
         h2 {
-            font-size: 2em;
+            font-size: 1.5em;
         }
         p {
             color:black;
             margin:3em;
-            font-size: 2em;
+            font-size: 1.5em;
         }
         a:visited, a:active, a:hover, a:link {
             color: inherit;
+        }
+        #pic {
+            width: 50%;
+        }
+        @media screen and (max-width: 992px) {
+            #pic {
+                width: 90%;
+            }
         }
     </style>
 </head>
@@ -36,7 +44,7 @@
 <body> 
     <h1>EIP-7503</h1>
     <h2>Zero-Knowledge Wormholes</h2>
-    <img src="eip7503.svg" style="width: 40%; display: block; margin: 0 auto;"/>
+    <img id="pic" src="eip7503.svg" style=" display: block; margin: 0 auto;"/>
     <p><a href="https://github.com/ethereum/EIPs/pull/7522">GitHub</a> | <a href="https://ethereum-magicians.org/t/eip-7503-zero-knowledge-wormholes-private-proof-of-burn-ppob/15456">Discuss</a></p>
 </body>
 </html>
